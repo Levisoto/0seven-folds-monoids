@@ -1,0 +1,69 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: af7efb4cebca4a180d07fc70548f1e3bcb837164f9fdca8f4346591d24e456af
+
+name:           0seven-folds-monoids
+version:        0.1.0.0
+synopsis:       Short description of your package
+description:    Please see the README on Github at <https://github.com/githubuser/0seven-folds-monoids#readme>
+homepage:       https://github.com/githubuser/0seven-folds-monoids#readme
+bug-reports:    https://github.com/githubuser/0seven-folds-monoids/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2017 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/0seven-folds-monoids
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+      , containers
+      , mtl
+  exposed-modules:
+      Lecture
+      Lib
+      Buffer
+      Editor
+      StringBuffer
+  other-modules:
+      Paths_0seven_folds_monoids
+  default-language: Haskell2010
+
+executable 0seven-folds-monoids-exe
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      0seven-folds-monoids
+    , base >=4.7 && <5
+  other-modules:
+      Paths_0seven_folds_monoids
+  default-language: Haskell2010
+
+test-suite 0seven-folds-monoids-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      0seven-folds-monoids
+    , base >=4.7 && <5
+  other-modules:
+      Paths_0seven_folds_monoids
+  default-language: Haskell2010
