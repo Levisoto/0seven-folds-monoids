@@ -39,6 +39,7 @@ library
       Buffer
       Editor
       StringBuffer
+      Sized
   other-modules:
       Paths_0seven_folds_monoids
   default-language: Haskell2010
